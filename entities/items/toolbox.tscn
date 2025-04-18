@@ -14,7 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Toolbox" instance=ExtResource("1_x1q2v")]
 item_name = "Toolbox"
-description = "\"He didn't become a craftsman like me, but I believe I taught him well enough to handle himself and fix things on his own.\""
+description = "\"I whish he'd have become a craftsman like me. But at least I taught him well enough to handle himself and fix things on his own.\""
 type = 1
 sound = ExtResource("2_wjfpl")
 

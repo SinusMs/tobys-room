@@ -14,7 +14,7 @@ region = Rect2(64, 64, 64, 64)
 
 [node name="TrashBin" instance=ExtResource("1_3t00g")]
 item_name = "Trash Bin"
-description = "If I leave it here a bit longer, somethig big will hatch"
+description = "\"If I leave it here a bit longer, somethig big will hatch.\""
 labelText = "Dispose"
 sound = ExtResource("2_yunh8")
 
