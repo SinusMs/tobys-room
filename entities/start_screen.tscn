@@ -27,6 +27,7 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("2_2vujj")
 script = ExtResource("3_77ggb")
+fade_out = 2.5
 
 [node name="Elements" type="Control" parent="."]
 layout_mode = 1
