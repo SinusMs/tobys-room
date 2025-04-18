@@ -12,28 +12,16 @@ func change_item(newLabelText: String) -> void:
 	if Utils.currently_selected_item == null:
 		$"CanvasLayer/Panel/NameFrame/NameLabel".text = ""
 		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = ""
-		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = null
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
 		$"CanvasLayer/Panel/StashButton".hide()
 	else:
 		$"CanvasLayer/Panel/NameFrame/NameLabel".text = Utils.currently_selected_item.item_name
 		$"CanvasLayer/Panel/DescriptionFrame/ScrollContainer/DescriptionLabel".text = Utils.currently_selected_item.description
-		$"CanvasLayer/Panel/ItemFrame/ItemTexture".texture = Utils.currently_selected_item.get_node("Sprite").texture
 		if !isShowingAchievements:
 			$"CanvasLayer/Panel/StashButton".show()
 		else:
 			$"CanvasLayer/Panel/StashButton".hide()
 		$"CanvasLayer/Panel/StashButton/RichTextLabel".text = newLabelText
-
-		
-		# set item frame texture beased on enuim TYPE
-		if Utils.currently_selected_item.type == Utils.TYPE.STORY:
-			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-story.png")
-		elif Utils.currently_selected_item.type == Utils.TYPE.EGG:
-			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-secret.png")
-		else:
-			$CanvasLayer/Panel/ItemFrame.texture = load("res://assets/UI/frame-default.png")
-
 
 func _on_stash_button_button_down() -> void:
 	var picked_up_item : ItemBase

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cberpn7tbycxf"]
+[gd_scene load_steps=9 format=3 uid="uid://cberpn7tbycxf"]
 
 [ext_resource type="Script" uid="uid://bi134igussi2d" path="res://ui/menu.gd" id="1_eya86"]
 [ext_resource type="Texture2D" uid="uid://cc6h65fvb6q1w" path="res://assets/UI/background.png" id="2_sjgy2"]
@@ -7,7 +7,6 @@
 [ext_resource type="FontFile" uid="uid://bsmapiv3yyyc4" path="res://assets/font/m5x7.ttf" id="4_bjurq"]
 [ext_resource type="Texture2D" uid="uid://sxm2l55w5iq4" path="res://assets/UI/button-pressed.png" id="4_cavdx"]
 [ext_resource type="Texture2D" uid="uid://bdfe1eidufkcb" path="res://assets/UI/button-highlighted.png" id="5_bjurq"]
-[ext_resource type="Texture2D" uid="uid://c22phri4tim0" path="res://assets/UI/frame-secret.png" id="5_jj6v1"]
 [ext_resource type="Texture2D" uid="uid://dsfscm5o0638x" path="res://assets/UI/textbox.png" id="6_va2jl"]
 
 [node name="Menu" type="Control"]
@@ -63,36 +62,6 @@ theme_override_fonts/normal_font = ExtResource("4_bjurq")
 scroll_active = false
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="ItemFrame" type="TextureRect" parent="CanvasLayer/Panel"]
-texture_filter = 3
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -36.5
-offset_top = -180.0
-offset_right = 36.5
-offset_bottom = -107.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(2, 2)
-pivot_offset = Vector2(36.5, 35)
-texture = ExtResource("5_jj6v1")
-
-[node name="ItemTexture" type="TextureRect" parent="CanvasLayer/Panel/ItemFrame"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.00733, 1.00137)
-expand_mode = 5
-stretch_mode = 4
 
 [node name="DescriptionFrame" type="TextureRect" parent="CanvasLayer/Panel"]
 texture_filter = 3
