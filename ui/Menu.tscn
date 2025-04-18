@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://bsmapiv3yyyc4" path="res://assets/font/m5x7.ttf" id="4_bjurq"]
 [ext_resource type="Texture2D" uid="uid://sxm2l55w5iq4" path="res://assets/UI/button-pressed.png" id="4_cavdx"]
 [ext_resource type="Texture2D" uid="uid://bdfe1eidufkcb" path="res://assets/UI/button-highlighted.png" id="5_bjurq"]
-[ext_resource type="Texture2D" uid="uid://dsfscm5o0638x" path="res://assets/UI/textbox.png" id="6_va2jl"]
+[ext_resource type="Texture2D" uid="uid://c71my2ykt0o1h" path="res://assets/UI/textbox-large.png" id="5_jj6v1"]
 
 [node name="Menu" type="Control"]
 z_index = -2
@@ -72,14 +72,14 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -62.0
-offset_top = -10.0
+offset_top = -165.5
 offset_right = 62.0
-offset_bottom = 111.0
+offset_bottom = 6.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2, 2)
 pivot_offset = Vector2(62, 46)
-texture = ExtResource("6_va2jl")
+texture = ExtResource("5_jj6v1")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/Panel/DescriptionFrame"]
 clip_contents = false
@@ -88,9 +88,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 11.0
-offset_top = 15.0
+offset_top = 12.0
 offset_right = -8.0
-offset_bottom = -12.9
+offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(62, 46)
