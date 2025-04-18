@@ -76,11 +76,7 @@ func set_highlight_colors():
 			$Highlight.material.set("shader_parameter/color1", Color.from_string("df84a5", Color.FLORAL_WHITE))
 			$Highlight.material.set("shader_parameter/color2", Color.from_string("e8c170", Color.FLORAL_WHITE))
 			$Highlight.material.set("shader_parameter/speed", 5.0)
-		Utils.TYPE.EGG:
-			$Highlight.material.set("shader_parameter/color1", Color.from_string("a4dddb", Color.FLORAL_WHITE))
-			$Highlight.material.set("shader_parameter/color2", Color.from_string("d0da91", Color.FLORAL_WHITE))
-			$Highlight.material.set("shader_parameter/speed", 2.0)
-		Utils.TYPE.FUNNY:
+		Utils.TYPE.EGG, Utils.TYPE.FUNNY:
 			$Highlight.material.set("shader_parameter/color1", Color.from_string("a4dddb", Color.FLORAL_WHITE))
 			$Highlight.material.set("shader_parameter/color2", Color.from_string("d0da91", Color.FLORAL_WHITE))
 			$Highlight.material.set("shader_parameter/speed", 2.0)
