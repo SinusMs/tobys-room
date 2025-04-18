@@ -12,7 +12,8 @@ func _on_exit_overview_button_down() -> void:
 
 func _on_item_picked_up(item: ItemBase) -> void:
 	item.position = Vector2(0,0)
-	$TextureRect/ScrollContainer/GridContainer.add_child(item)
+	if item.type == Utils.TYPE.STORY or item.type == Utils.TYPE.EGG:
+		$TextureRect/ScrollContainer/GridContainer.add_child(item)
 
 	
 	
