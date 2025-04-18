@@ -125,13 +125,13 @@ children = Dictionary[PackedScene, Vector2]({
 ExtResource("6_rhe6t"): Vector2(0, 0),
 ExtResource("7_oea3u"): Vector2(50, 60)
 })
-dependencies = [NodePath("../BirthFoto"), NodePath("../Bicycle"), NodePath("../MomsTears"), NodePath("../punching_bag")]
+dependencies = [NodePath("../Bicycle"), NodePath("../MomsTears"), NodePath("../punching_bag")]
 
 [node name="Bicycle" parent="ItemContainer/FinalLayer" instance=ExtResource("4_bbv1t")]
-offset_left = 182.0
-offset_top = 467.0
-offset_right = 182.0
-offset_bottom = 467.0
+offset_left = 196.0
+offset_top = 465.0
+offset_right = 196.0
+offset_bottom = 465.0
 rotation = 0.129587
 
 [node name="MomsTears" parent="ItemContainer/FinalLayer" instance=ExtResource("10_ashli")]
@@ -148,10 +148,10 @@ offset_bottom = 252.0
 dependencies = [NodePath("../../CobwebLayer/Cobweb")]
 
 [node name="Boots" parent="ItemContainer/FinalLayer" instance=ExtResource("12_ybg82")]
-offset_left = 95.0
-offset_top = 451.0
-offset_right = 95.0
-offset_bottom = 451.0
+offset_left = 128.0
+offset_top = 435.0
+offset_right = 128.0
+offset_bottom = 435.0
 
 [node name="Beer Crate" parent="ItemContainer/FinalLayer" instance=ExtResource("27_n4lax")]
 offset_left = 234.0
@@ -182,7 +182,7 @@ children = Dictionary[PackedScene, Vector2]({
 ExtResource("11_ybg82"): Vector2(64, 165),
 ExtResource("7_shs6v"): Vector2(128, 155)
 })
-dependencies = [NodePath("../Degree"), NodePath("../../KalaxLayer/PizzaCartons"), NodePath("../Lamp")]
+dependencies = [NodePath("../Lamp")]
 
 [node name="Degree" parent="ItemContainer/CobwebLayer" instance=ExtResource("5_whbkv")]
 offset_left = 197.0
@@ -450,9 +450,9 @@ offset_bottom = 342.0
 
 [node name="ItemBase" parent="ItemContainer/KalaxLayer" instance=ExtResource("53_x11v0")]
 offset_left = 184.0
-offset_top = 530.0
+offset_top = 529.0
 offset_right = 184.0
-offset_bottom = 530.0
+offset_bottom = 529.0
 
 [node name="Teddy" parent="ItemContainer/KalaxLayer" instance=ExtResource("54_i3165")]
 offset_left = 322.0
@@ -466,12 +466,11 @@ offset_top = 430.0
 offset_right = 398.0
 offset_bottom = 430.0
 
-[node name="PizzaCartons" parent="ItemContainer/KalaxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("8_bbv1t")]
+[node name="PizzaCartons" parent="ItemContainer/KalaxLayer" instance=ExtResource("8_bbv1t")]
 offset_left = 65.0
 offset_top = 439.0
 offset_right = 65.0
 offset_bottom = 439.0
-dependencies = [NodePath("../../MovingBoxLayer/MovingBox6")]
 
 [node name="Foreground" type="Control" parent="ItemContainer"]
 layout_mode = 3

@@ -13,6 +13,7 @@ atlas = ExtResource("2_raw5l")
 region = Rect2(0, 48, 0, 48)
 
 [node name="cobweb_bakery" instance=ExtResource("1_2u7ks")]
+item_name = "Cobweb Bakery"
 description = "\"Is this some sort of reference I don't understand?\""
 type = 2
 sound = ExtResource("2_s8ni1")
