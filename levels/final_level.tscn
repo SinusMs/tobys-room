@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://us5slrlb7ias"]
+[gd_scene load_steps=64 format=3 uid="uid://us5slrlb7ias"]
 
 [ext_resource type="Script" uid="uid://c3u0uh25n4yiy" path="res://levels/main_level.gd" id="1_a6mss"]
 [ext_resource type="PackedScene" uid="uid://b0o5camwh1t1j" path="res://levels/audio_stream_player.tscn" id="1_bpo0i"]
@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://difqkrb4dklxk" path="res://entities/items/backpack.tscn" id="17_u6n1r"]
 [ext_resource type="PackedScene" uid="uid://cjuwah2ysylo" path="res://entities/items/moldy_bread.tscn" id="18_k7umn"]
 [ext_resource type="PackedScene" uid="uid://c7loegb673ddf" path="res://entities/items/family_foto.tscn" id="19_rmjp0"]
+[ext_resource type="PackedScene" uid="uid://7d3kcnnd0pk1" path="res://entities/items/toolbox.tscn" id="20_he64i"]
 [ext_resource type="PackedScene" uid="uid://c382y4mxn5ko6" path="res://entities/items/lamp.tscn" id="21_1woaw"]
 [ext_resource type="PackedScene" uid="uid://c81x0dytqx5yd" path="res://entities/items/nougat_bits.tscn" id="22_0m0gl"]
 [ext_resource type="PackedScene" uid="uid://5henor46r6mc" path="res://entities/items/rock_face.tscn" id="22_71s5n"]
@@ -41,6 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://pq5ooqubkbjs" path="res://entities/items/demon_circle.tscn" id="24_6ri1y"]
 [ext_resource type="PackedScene" uid="uid://dgexs3f2uftyh" path="res://entities/items/canned_spam.tscn" id="25_7tdvr"]
 [ext_resource type="PackedScene" uid="uid://clpi5w51dp101" path="res://entities/items/egg.tscn" id="26_a8m5x"]
+[ext_resource type="PackedScene" uid="uid://b7qiktehtq31w" path="res://entities/items/laptop.tscn" id="26_p3lhd"]
 [ext_resource type="PackedScene" uid="uid://qm6gtb8mgovs" path="res://entities/items/beer_crate.tscn" id="27_n4lax"]
 [ext_resource type="PackedScene" uid="uid://bml3qrimjf6g7" path="res://entities/items/punching_bag.tscn" id="28_3uxpt"]
 [ext_resource type="PackedScene" uid="uid://b0crx0k4fb5rf" path="res://entities/items/shite.tscn" id="29_3s6e2"]
@@ -108,6 +110,12 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="BirthFoto" parent="ItemContainer/FinalLayer" instance=ExtResource("6_f6wv6")]
+offset_left = 274.0
+offset_top = 469.0
+offset_right = 274.0
+offset_bottom = 469.0
+
 [node name="Coffin" parent="ItemContainer/FinalLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("4_whbkv")]
 offset_left = 146.0
 offset_top = 409.0
@@ -119,31 +127,37 @@ ExtResource("7_oea3u"): Vector2(50, 60)
 })
 dependencies = [NodePath("../BirthFoto"), NodePath("../Bicycle"), NodePath("../MomsTears"), NodePath("../punching_bag")]
 
-[node name="BirthFoto" parent="ItemContainer/FinalLayer" instance=ExtResource("6_f6wv6")]
-offset_left = 163.0
-offset_top = 421.0
-offset_right = 163.0
-offset_bottom = 421.0
-
 [node name="Bicycle" parent="ItemContainer/FinalLayer" instance=ExtResource("4_bbv1t")]
-offset_left = 168.0
-offset_top = 468.0
-offset_right = 168.0
-offset_bottom = 468.0
+offset_left = 182.0
+offset_top = 467.0
+offset_right = 182.0
+offset_bottom = 467.0
 rotation = 0.129587
 
 [node name="MomsTears" parent="ItemContainer/FinalLayer" instance=ExtResource("10_ashli")]
-offset_left = 327.0
-offset_top = 415.0
-offset_right = 327.0
-offset_bottom = 415.0
+offset_left = 339.0
+offset_top = 472.0
+offset_right = 339.0
+offset_bottom = 472.0
 
 [node name="punching_bag" parent="ItemContainer/FinalLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("28_3uxpt")]
-offset_left = 231.0
+offset_left = 265.0
 offset_top = 252.0
-offset_right = 231.0
+offset_right = 265.0
 offset_bottom = 252.0
 dependencies = [NodePath("../../CobwebLayer/Cobweb")]
+
+[node name="Boots" parent="ItemContainer/FinalLayer" instance=ExtResource("12_ybg82")]
+offset_left = 95.0
+offset_top = 451.0
+offset_right = 95.0
+offset_bottom = 451.0
+
+[node name="Beer Crate" parent="ItemContainer/FinalLayer" instance=ExtResource("27_n4lax")]
+offset_left = 234.0
+offset_top = 452.0
+offset_right = 234.0
+offset_bottom = 452.0
 
 [node name="CobwebLayer" type="Control" parent="ItemContainer"]
 layout_mode = 3
@@ -168,26 +182,19 @@ children = Dictionary[PackedScene, Vector2]({
 ExtResource("11_ybg82"): Vector2(64, 165),
 ExtResource("7_shs6v"): Vector2(128, 155)
 })
-dependencies = [NodePath("../Degree"), NodePath("../PizzaCartons"), NodePath("../Lamp")]
+dependencies = [NodePath("../Degree"), NodePath("../../KalaxLayer/PizzaCartons"), NodePath("../Lamp")]
 
 [node name="Degree" parent="ItemContainer/CobwebLayer" instance=ExtResource("5_whbkv")]
-offset_left = 253.0
-offset_top = 416.0
-offset_right = 253.0
-offset_bottom = 416.0
+offset_left = 197.0
+offset_top = 512.0
+offset_right = 197.0
+offset_bottom = 512.0
 
-[node name="PizzaCartons" parent="ItemContainer/CobwebLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("8_bbv1t")]
-offset_left = 301.0
-offset_top = 403.0
-offset_right = 301.0
-offset_bottom = 403.0
-dependencies = [NodePath("../../MovingBoxLayer/MovingBox6")]
-
-[node name="Boots" parent="ItemContainer/CobwebLayer" instance=ExtResource("12_ybg82")]
-offset_left = 95.0
-offset_top = 451.0
-offset_right = 95.0
-offset_bottom = 451.0
+[node name="Toolbox" parent="ItemContainer/CobwebLayer" instance=ExtResource("20_he64i")]
+offset_left = 237.0
+offset_top = 400.0
+offset_right = 237.0
+offset_bottom = 400.0
 
 [node name="Milk" parent="ItemContainer/CobwebLayer" instance=ExtResource("17_5vinw")]
 offset_left = 85.0
@@ -210,6 +217,12 @@ offset_left = 355.0
 offset_top = 403.0
 offset_right = 355.0
 offset_bottom = 403.0
+
+[node name="Laptop" parent="ItemContainer/CobwebLayer" instance=ExtResource("26_p3lhd")]
+offset_left = 313.0
+offset_top = 412.0
+offset_right = 313.0
+offset_bottom = 412.0
 
 [node name="MovingBoxLayer" type="Control" parent="ItemContainer"]
 layout_mode = 3
@@ -387,12 +400,6 @@ offset_top = 530.0
 offset_right = 297.0
 offset_bottom = 530.0
 
-[node name="Beer Crate" parent="ItemContainer/KalaxLayer" instance=ExtResource("27_n4lax")]
-offset_left = 206.0
-offset_top = 530.0
-offset_right = 206.0
-offset_bottom = 530.0
-
 [node name="TrashBag" parent="ItemContainer/KalaxLayer" instance=ExtResource("29_dgof3")]
 offset_left = 13.0
 offset_top = 511.0
@@ -458,6 +465,13 @@ offset_left = 398.0
 offset_top = 430.0
 offset_right = 398.0
 offset_bottom = 430.0
+
+[node name="PizzaCartons" parent="ItemContainer/KalaxLayer" node_paths=PackedStringArray("dependencies") instance=ExtResource("8_bbv1t")]
+offset_left = 65.0
+offset_top = 439.0
+offset_right = 65.0
+offset_bottom = 439.0
+dependencies = [NodePath("../../MovingBoxLayer/MovingBox6")]
 
 [node name="Foreground" type="Control" parent="ItemContainer"]
 layout_mode = 3
