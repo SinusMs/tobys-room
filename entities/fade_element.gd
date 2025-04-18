@@ -39,4 +39,4 @@ func _process(delta: float) -> void:
 			sleep_after_time -= delta
 		else:
 			faded_out.emit()
-			free()
+			queue_free()
