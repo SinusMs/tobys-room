@@ -1,0 +1,131 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyh2o7ui6kxk8"]
+
+[ext_resource type="Script" uid="uid://bdtuxygv1mq02" path="res://entities/fade_screen.gd" id="1_ncxyx"]
+[ext_resource type="Texture2D" uid="uid://dnl5jilrrpewu" path="res://assets/UI/intro_background.png" id="2_2vujj"]
+[ext_resource type="Script" uid="uid://dxhoufsqufaj" path="res://entities/fade_element.gd" id="2_afy8x"]
+[ext_resource type="Script" uid="uid://c6ppmdlwgcxiv" path="res://entities/fade_background.gd" id="3_77ggb"]
+[ext_resource type="FontFile" uid="uid://bsmapiv3yyyc4" path="res://assets/font/m5x7.ttf" id="3_yib28"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_ncxyx")
+start_on_ready = true
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_2vujj")
+script = ExtResource("3_77ggb")
+
+[node name="Elements" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="StartDelay" type="Control" parent="Elements"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("2_afy8x")
+fade_in_time = 0.0
+stay_time = 0.0
+fade_out_time = 0.0
+sleep_after_time = 1.0
+
+[node name="QuoteContainer" type="CenterContainer" parent="Elements" node_paths=PackedStringArray("fade_elements")]
+modulate = Color(0.478431, 0.282353, 0.254902, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("2_afy8x")
+fade_in_time = 9.0
+stay_time = 2.0
+sleep_after_time = 0.5
+fade_elements = [NodePath("Panel/RichTextLabel"), NodePath("Panel2/RichTextLabel"), NodePath("Panel3/RichTextLabel"), NodePath("Panel4/RichTextLabel")]
+
+[node name="Panel" type="Panel" parent="Elements/QuoteContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Elements/QuoteContainer/Panel"]
+layout_mode = 0
+offset_left = -345.0
+offset_top = -106.0
+offset_right = 359.0
+offset_bottom = 350.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_yib28")
+theme_override_font_sizes/normal_font_size = 47
+text = "\"Art is not for fixing yourself,"
+
+[node name="Panel2" type="Panel" parent="Elements/QuoteContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Elements/QuoteContainer/Panel2"]
+layout_mode = 0
+offset_left = -345.0
+offset_top = -106.0
+offset_right = 359.0
+offset_bottom = 350.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_yib28")
+theme_override_font_sizes/normal_font_size = 47
+text = "
+it is for showing others that you're broken"
+
+[node name="Panel3" type="Panel" parent="Elements/QuoteContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Elements/QuoteContainer/Panel3"]
+layout_mode = 0
+offset_left = -345.0
+offset_top = -106.0
+offset_right = 359.0
+offset_bottom = 350.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_yib28")
+theme_override_font_sizes/normal_font_size = 47
+text = "
+
+so they might feel less alone.\" "
+
+[node name="Panel4" type="Panel" parent="Elements/QuoteContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Elements/QuoteContainer/Panel4"]
+layout_mode = 0
+offset_left = -351.0
+offset_top = 84.0
+offset_right = 329.0
+offset_bottom = 212.0
+mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("3_yib28")
+theme_override_font_sizes/normal_font_size = 47
+text = "~ exurb1a"
+horizontal_alignment = 2
+
+[connection signal="finished" from="." to="Background" method="_on_start_screen_finished"]
+[connection signal="finished" from="Background" to="." method="_on_background_finished"]
