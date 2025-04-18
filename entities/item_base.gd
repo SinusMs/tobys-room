@@ -14,6 +14,7 @@ var isHighlighted : bool = false
 var anim : AnimationPlayer
 
 func _ready() -> void:
+	set_highlight_colors()
 	$Highlight.hide()
 	mittelpunkt = %Mittelpunkt.position
 	anim = $AnimationPlayer
@@ -65,3 +66,25 @@ func _on_gui_input(event:InputEvent) -> void:
 			Utils.currently_selected_item = self
 			SignalBus.item_changed.emit(labelText)
 			isHighlighted = true
+
+func set_highlight_colors():
+	var shader = preload("res://entities/item_highlight.gdshader")
+	$Highlight.material = ShaderMaterial.new()
+	$Highlight.material.set("shader", shader)
+	match type:
+		Utils.TYPE.STORY:
+			$Highlight.material.set("shader_parameter/color1", Color.from_string("df84a5", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/color2", Color.from_string("e8c170", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/speed", 5.0)
+		Utils.TYPE.EGG:
+			$Highlight.material.set("shader_parameter/color1", Color.from_string("a4dddb", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/color2", Color.from_string("d0da91", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/speed", 2.0)
+		Utils.TYPE.FUNNY:
+			$Highlight.material.set("shader_parameter/color1", Color.from_string("a4dddb", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/color2", Color.from_string("d0da91", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/speed", 2.0)
+		_:
+			$Highlight.material.set("shader_parameter/color1", Color.from_string("ebede9", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/color2", Color.from_string("c7cfcc", Color.FLORAL_WHITE))
+			$Highlight.material.set("shader_parameter/speed", 4.0)
