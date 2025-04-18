@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7qiktehtq31w"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_rtulp"]
+[ext_resource type="Texture2D" uid="uid://2ai5xedgeb0b" path="res://assets/items/laptop.png" id="2_4anna"]
+[ext_resource type="AudioStream" uid="uid://bnpb8e5pnttun" path="res://assets/sfx/paper_stack.wav" id="2_pmx6o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmx6o"]
+atlas = ExtResource("2_4anna")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_slm2a"]
+atlas = ExtResource("2_4anna")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Laptop" instance=ExtResource("1_rtulp")]
+item_name = "Old Laptop"
+description = "\"There's an opened chat with one of his friends.\"
+...
+[17:35] Ugh, I just hate it so much how he always NEEDS to be right abt everything. I don't even argue with him anymore becaus I don't see the point. 
+[17:43] That's tough bro, wanna come over?
+[17:45] Sure, be there in 30 mins"
+labelText = "Turn off"
+type = 1
+sound = ExtResource("2_pmx6o")
+
+[node name="Schatten" parent="." index="0"]
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 67.0
+offset_bottom = 66.0
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_pmx6o")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_slm2a")
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(30, 3, 23, 6, 18, 27, 6, 38, 6, 43, 32, 58, 38, 58, 53, 44, 59, 27, 58, 19)

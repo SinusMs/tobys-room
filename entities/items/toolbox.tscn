@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://7d3kcnnd0pk1"]
+
+[ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_x1q2v"]
+[ext_resource type="AudioStream" uid="uid://t4iceuciow3b" path="res://assets/sfx/bonk.wav" id="2_wjfpl"]
+[ext_resource type="Texture2D" uid="uid://dnq5x4xkqhfg0" path="res://assets/items/toolbox.png" id="2_ybhyu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjfpl"]
+atlas = ExtResource("2_ybhyu")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mhjn"]
+atlas = ExtResource("2_ybhyu")
+region = Rect2(0, 32, 32, 32)
+
+[node name="Toolbox" instance=ExtResource("1_x1q2v")]
+item_name = "Toolbox"
+description = "\"He didn't become a craftsman like me, but I believe I taught him well enough to handle himself and fix things on his own.\""
+type = 1
+sound = ExtResource("2_wjfpl")
+
+[node name="Schatten" parent="." index="0"]
+offset_top = 8.0
+offset_bottom = 72.0
+
+[node name="Sprite" parent="." index="1"]
+texture = SubResource("AtlasTexture_wjfpl")
+
+[node name="Highlight" parent="." index="2"]
+texture = SubResource("AtlasTexture_8mhjn")
+
+[node name="CollisionPolygon2D" parent="." index="4"]
+polygon = PackedVector2Array(25, 16, 10, 22, 4, 28, 5, 51, 9, 56, 53, 56, 59, 53, 60, 42, 61, 27, 54, 21, 40, 16)
