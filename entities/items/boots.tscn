@@ -14,8 +14,7 @@ region = Rect2(0, 64, 64, 64)
 
 [node name="Boots" instance=ExtResource("1_q840x")]
 item_name = "Hiking Boots"
-description = "\"All of the hiking tours we did together were so long we both had to push ourselves to our physical limit. We always felt like we were the greatest when we fought through and made it to our destination.\""
-labelText = "Put on"
+description = "\"The hiking tours we did together were so long we both had to push ourselves to our physical limit. We always felt like we were the greatest when we fought through to our destination. Even when he was really young, I could always trust that he would manage to keep up with me, no matter how hard the trail. I should've let him know how much I appreciated that.\""
 type = 1
 sound = ExtResource("2_cgw6p")
 

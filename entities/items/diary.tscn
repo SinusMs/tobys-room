@@ -14,8 +14,9 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Diary" instance=ExtResource("1_1ho2u")]
 item_name = "Diary"
-description = "Monday, 07.04.: I went to my first therapy session today. I feel like I opened pandoras box, but I feel somewhat better. I just kept talking and talking and talking and suddenly the time was up. I hadn't been aware I was even able to talk that much... 
-\"Huh, he never told me he went to therapy.\""
+description = "Mo, 07.04.: I went to my first therapy session today. I feel like I opened pandoras box, but I feel somewhat better. I just kept talking and talking and talking and suddenly the time was up. I hadn't been aware I was even able to talk that much. 
+\"Huh, I didn't even know he went to therapy.\""
+labelText = "Stop reading"
 type = 1
 sound = ExtResource("2_7scju")
 

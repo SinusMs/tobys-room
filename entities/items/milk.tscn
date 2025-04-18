@@ -14,9 +14,8 @@ region = Rect2(0, 32, 0, 32)
 
 [node name="Milk" instance=ExtResource("1_fst1a")]
 item_name = "Milk"
-description = "\"I changed my mind and came back after all.\""
-labelText = "Drink"
-type = 3
+description = "\"Yeesh, that smell!\""
+labelText = "Throw away"
 sound = ExtResource("2_mvl21")
 
 [node name="Schatten" parent="." index="0"]

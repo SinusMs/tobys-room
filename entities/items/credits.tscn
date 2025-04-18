@@ -14,7 +14,8 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Credits" instance=ExtResource("1_ffhiv")]
 item_name = "Credits"
-description = "<Title>
+description = "Toby's Room - Sinus' Version
+
 Made for Ludum Dare
 by:
 Zaubergurke
@@ -23,6 +24,7 @@ Göndyr
 SinusMs
 MysteriousJuice
 Fi-on-a-Loop
+
 Thank you for Playing <3"
 type = 1
 sound = ExtResource("2_blbma")

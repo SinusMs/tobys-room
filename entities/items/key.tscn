@@ -13,8 +13,8 @@ atlas = ExtResource("2_nk4hd")
 region = Rect2(0, 16, 32, 16)
 
 [node name="Key" instance=ExtResource("1_qncxq")]
-item_name = "Key to your moms room"
-description = "common item"
+item_name = "Key to Yen's room"
+description = "Common Item"
 type = 2
 sound = ExtResource("2_kmxvu")
 

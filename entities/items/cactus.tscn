@@ -14,7 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Cactus" instance=ExtResource("1_47k0x")]
 item_name = "Cactus"
-description = "\"Looks like a cactus can survive anything.\""
+description = "Looks like a cactus can survive anything."
 type = 3
 sound = ExtResource("2_ag68o")
 

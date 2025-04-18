@@ -14,7 +14,7 @@ region = Rect2(0, 512, 128, 128)
 
 [node name="Drawer" instance=ExtResource("1_0a1gh")]
 item_name = "Drawer"
-description = "\"Lets take a look inside!\""
+description = "What could be inside?"
 labelText = "Open"
 type = 4
 sound = ExtResource("2_eqy2f")

@@ -14,7 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="MedicalBills" instance=ExtResource("1_npwgq")]
 item_name = "Newspaper"
-description = "White House Threatens to do Stuff because Markets do Things..."
+description = "White house threatens to do stuff because markets do things..."
 type = 3
 sound = ExtResource("2_xp6w3")
 

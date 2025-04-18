@@ -15,7 +15,10 @@ region = Rect2(0, 32, 32, 32)
 [node name="LetterOpen" instance=ExtResource("1_m1xl5")]
 item_name = "Letter"
 description = "\"A scribbled letter, many parts are crossed out or corrected.\" 
-Dear Dad, it is really hard for me to tell you this, so I am writing you this letter. We have become so distant it seems like you don't even know who I am anymore. When we talk about my life, its never about what I want from life, its always about what yout think is best for me. I get it, you wish I was more like you, but I am just not. I really hurts to not feel supported by my own dad. You don't have to say you're proud. You don't have to hug me. You don't have to say you love me. I understand you're not able to do any of that. Just listen to me and accept who I am. I love you, you're my dad after all, but if things don't change at least by a little, I will move out. 
+
+Dear Dad, 
+it is really hard for me to tell you this, so I am writing you this letter. We have become so distant it seems like you don't even know who I am anymore. When we talk about my life, its never about what I want from life, its always about what yout think is best for me. I get it, you wish I was more like you, but I am just not. I really hurts to not feel supported by my own dad. You don't have to say you're proud. You don't have to hug me. You don't have to say you love me. I understand you're not able to do any of that. Just listen to me and accept who I am. I love you, you're my dad after all, but if things don't change at least by a little, I will move out. 
+
 \"I wonder why he never gave the letter to me.\""
 type = 1
 sound = ExtResource("2_clhm5")

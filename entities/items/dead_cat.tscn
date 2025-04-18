@@ -13,6 +13,7 @@ atlas = ExtResource("2_nil11")
 region = Rect2(0, 48, 48, 48)
 
 [node name="DeadCat" instance=ExtResource("1_7nj72")]
+item_name = "Dead Cat"
 description = "\"His cat Guppy! There you are! 
 Hey cutie, are you alright?\"
 

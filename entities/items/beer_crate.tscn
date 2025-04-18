@@ -14,7 +14,9 @@ region = Rect2(0, 64, 64, 64)
 
 [node name="Beer Crate" instance=ExtResource("1_wjqs1")]
 item_name = "Beer Crate"
-description = "\"One of the few things we have in common is our love for beer. When he decided early on, that German beer is the only good beer, I was so proud.\""
+description = "\"The evenings we spent drinking together were the ones we felt closest. I pity that on most occasions, he hesitated to drink any alcohol at all.\""
+labelText = "Drink some?"
+type = 1
 sound = ExtResource("2_2ombp")
 
 [node name="Schatten" parent="." index="0"]

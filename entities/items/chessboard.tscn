@@ -14,8 +14,7 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="Chessboard" instance=ExtResource("1_ljdrh")]
 item_name = "Chessboard"
-description = "\"We used to play, he was such a smart child...\""
-type = 1
+description = "A pity that the pieces are missing..."
 sound = ExtResource("2_km6vj")
 
 [node name="Schatten" parent="." index="0"]

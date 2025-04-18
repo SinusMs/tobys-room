@@ -14,7 +14,8 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="BirthFoto" instance=ExtResource("1_ay7jb")]
 item_name = "Birth Foto"
-description = "\"It feels like yesterday. I still remember every last detail about that day. The chaos. The worries. The tension. The joy. I wanted to be there, but they hat to perform a C-section. The feeling of relief and pride after it all went well was indescribable.\""
+description = "\"It feels like yesterday. I still remember every last detail about that day. The chaos. The worries. The tension. The joy. I wanted to be there, but they hat to perform a C-section. The feeling of relief and pride after it all went well was indescribable.
+He may have turned out to be very different to the son I had hoped for, but after all he is the only son I have.\""
 type = 1
 sound = ExtResource("2_hjwa7")
 

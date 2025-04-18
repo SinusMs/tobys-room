@@ -13,8 +13,8 @@ atlas = ExtResource("2_flpd0")
 region = Rect2(0, 32, 32, 32)
 
 [node name="Degree" instance=ExtResource("1_i64bq")]
-item_name = "Degree"
-description = "\"I wish I could have given him more guidance in life, but this computer stuff is just... too much for me. I just don´t get it.\""
+item_name = "CS Degree"
+description = "\"I wish I could have given him more guidance in life, but this computer stuff is just... too much for me. I don't understand anything about it at all.\""
 type = 1
 sound = ExtResource("2_3wheg")
 

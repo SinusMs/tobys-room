@@ -14,7 +14,7 @@ region = Rect2(32, 32, 32, 32)
 
 [node name="Canned_Beans" instance=ExtResource("1_g0xtq")]
 item_name = "Beans"
-description = "\"They still seem to be good\""
+description = "They still seem to be good"
 labelText = "Eat"
 type = 3
 sound = ExtResource("2_3q7r2")

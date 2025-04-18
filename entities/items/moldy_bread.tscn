@@ -14,8 +14,8 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="MoldyBread" instance=ExtResource("1_s5kqg")]
 item_name = "Moldy Bread"
-description = "yummy"
-labelText = "Eat"
+description = "It's a wonder it hasn't grown any legs by now."
+labelText = "Kill"
 sound = ExtResource("2_1b51i")
 
 [node name="Schatten" parent="." index="0"]

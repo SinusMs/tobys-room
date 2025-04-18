@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://hfrk2ffwp7a4"]
+[gd_scene load_steps=6 format=3 uid="uid://vbbvimmv2tq2"]
 
 [ext_resource type="PackedScene" uid="uid://clit3qrorn30j" path="res://entities/item_base.tscn" id="1_iff2p"]
 [ext_resource type="AudioStream" uid="uid://rclatapr1dbn" path="res://assets/sfx/stone_bonk.wav" id="2_6mshg"]
@@ -13,8 +13,9 @@ atlas = ExtResource("3_14jip")
 region = Rect2(0, 32, 0, 32)
 
 [node name="phone" instance=ExtResource("1_iff2p")]
-item_name = "broken phone"
+item_name = "Broken Phone"
 description = "\"Ironic. Since he moved out he mostly ignores my texts and phone calls. I wonder how he is doing...\""
+type = 1
 sound = ExtResource("2_6mshg")
 
 [node name="Schatten" parent="." index="0"]

@@ -13,9 +13,8 @@ atlas = ExtResource("3_y7546")
 region = Rect2(0, 32, 32, 32)
 
 [node name="Ketchup" instance=ExtResource("1_uy7e0")]
-item_name = "Hela Curry Gewürz Ketchup"
+item_name = "Hela Curry Ketchup"
 description = "Raw sauce"
-labelText = "Drink"
 type = 3
 sound = ExtResource("2_ep12l")
 

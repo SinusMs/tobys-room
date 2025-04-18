@@ -14,8 +14,8 @@ region = Rect2(0, 32, 32, 32)
 
 [node name="SoggyNougatBits" instance=ExtResource("1_khyqt")]
 item_name = "Soggy Nougat Bits"
-description = "\"They have soaking for much longer than the perfect 87 secounds but I can't let them go to waste.\""
-labelText = "Eat"
+description = "They have soaking for a little longer than the perfect 87 seconds..."
+labelText = "Eat?"
 sound = ExtResource("2_5xayh")
 
 [node name="Schatten" parent="." index="0"]

@@ -14,8 +14,8 @@ region = Rect2(0, 0, 64, 64)
 
 [node name="RockFace" instance=ExtResource("1_7gylb")]
 item_name = "Rock that looks like a Face"
-description = "\"Is it a rock or is it a face?
-I think it's a metaphor!\""
+description = "Is it a rock or is it a face?
+I think it's a metaphor!"
 type = 2
 sound = ExtResource("2_c26lm")
 

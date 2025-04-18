@@ -13,7 +13,7 @@ atlas = ExtResource("2_rv3hv")
 region = Rect2(0, 32, 32, 32)
 
 [node name="Egg" instance=ExtResource("1_6lfo1")]
-item_name = "an Egg"
+item_name = "Odd Egg"
 description = "\"Hmmm... it might hatch soon.\""
 labelText = "Incubate"
 type = 2

@@ -13,7 +13,7 @@ atlas = ExtResource("3_u1dnk")
 region = Rect2(0, 64, 32, 64)
 
 [node name="Bong" instance=ExtResource("1_c2ll3")]
-item_name = "Weird Vase"
+item_name = "Odd Vase"
 description = "\"Some days, he seemed really... absent. I guess this explains some of it. I told him over and over agin to keep his hands off that stuff. Why would he do such a thing?\""
 type = 1
 sound = ExtResource("2_2up70")
