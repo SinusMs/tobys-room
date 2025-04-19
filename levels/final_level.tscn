@@ -84,16 +84,6 @@ offset_left = 247.0
 offset_top = 455.0
 offset_right = 247.0
 offset_bottom = 455.0
-description = "<Toby´s Room>
-Made for Ludum Dare
-by:
-Zaubergurke
-Lipski
-Göndyr
-SinusMs
-MysteriousJuice
-Fi-on-a-Loop
-Thank you for Playing <3"
 labelText = "End Game"
 dependencies = [NodePath("../FinalLayer/BirthFoto")]
 metadata/_edit_use_anchors_ = true
