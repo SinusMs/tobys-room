@@ -115,7 +115,7 @@ offset_left = 146.0
 offset_top = 409.0
 offset_right = 146.0
 offset_bottom = 409.0
-dependencies = [NodePath("../Bicycle"), NodePath("../../KalaxLayer/MomsTears"), NodePath("../punching_bag")]
+dependencies = [NodePath("../Bicycle"), NodePath("../punching_bag")]
 
 [node name="Bicycle" parent="ItemContainer/FinalLayer" instance=ExtResource("4_bbv1t")]
 offset_left = 196.0
@@ -155,7 +155,7 @@ offset_top = 233.0
 offset_right = 140.0
 offset_bottom = 233.0
 type = 4
-dependencies = [NodePath("../Drawer"), NodePath("../Backpack")]
+dependencies = [NodePath("../Drawer"), NodePath("../Backpack"), NodePath("../DegreeBox")]
 
 [node name="DegreeBox" parent="ItemContainer/CobwebLayer" instance=ExtResource("7_7wjex")]
 offset_left = 221.0
