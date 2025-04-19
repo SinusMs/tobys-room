@@ -14,7 +14,7 @@ region = Rect2(0, 320, 0, 320)
 
 [node name="door" instance=ExtResource("1_juiyo")]
 item_name = "Room Door"
-description = "\"Okay, today is the day. I avoided clearing out his old room and it has kind of become a storage room filled with all kind of junk. This is gonna be tough.\""
+description = "\"Okay, today is the day. I avoided clearing out his old room for ages and it has kind of become a storage room filled with all kind of junk. This is gonna be tough.\""
 labelText = "Open"
 type = 4
 sound = ExtResource("2_yxter")
