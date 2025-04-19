@@ -33,4 +33,4 @@ func cleanup() -> void:
 	$Menu.change_item("")
 
 func end_this() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file.call_deferred("res://levels/final_level.tscn")
