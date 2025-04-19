@@ -19,7 +19,7 @@ Hey cutie, are you alright?\"
 
 \"oh...\""
 labelText = "Bury"
-type = 2
+type = 3
 sound = ExtResource("2_ny5n0")
 
 [node name="Schatten" parent="." index="0"]

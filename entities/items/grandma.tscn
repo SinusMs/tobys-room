@@ -18,7 +18,7 @@ description = "\"Hi, sweety.\"
 \"Oh, hi grandma.\"
 
 "
-type = 1
+type = 3
 sound = ExtResource("2_04dfe")
 
 [node name="Schatten" parent="." index="0"]

@@ -15,7 +15,7 @@ region = Rect2(0, 32, 32, 32)
 [node name="Bibel" instance=ExtResource("1_up4j5")]
 item_name = "The Holy Bibel"
 description = "Some fantasy novel..."
-type = 2
+type = 3
 sound = ExtResource("2_6lnf0")
 
 [node name="Schatten" parent="." index="0"]

@@ -16,7 +16,7 @@ region = Rect2(0, 32, 32, 32)
 item_name = "Odd Egg"
 description = "\"Hmmm... it might hatch soon.\""
 labelText = "Incubate"
-type = 2
+type = 3
 sound = ExtResource("2_0edd7")
 
 [node name="Schatten" parent="." index="0"]
