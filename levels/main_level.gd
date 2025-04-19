@@ -33,8 +33,4 @@ func cleanup() -> void:
 	$Menu.change_item("")
 
 func end_this() -> void:
-	for i in 100:
-		await get_tree().create_timer(.1).timeout
-		Utils.found_items += 1
-		$CanvasLayer._on_item_picked_up(null)
 	get_tree().quit()
